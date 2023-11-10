@@ -7,10 +7,7 @@ const listBuku = [
 const sumJumlahBuku = (buku) => {
     //tambahkan kode disini
     let totalBuku = 0
-    totalBuku = buku.reduce((acc, curr) => {
-        console.log("🚀 ~ file: challenge3.js:11 ~ totalBuku=buku.reduce ~ curr:", curr.jumlah)
-        return acc += curr.jumlah
-    }, 0)
+    
     return totalBuku
 }
 
