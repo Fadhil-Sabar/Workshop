@@ -10,10 +10,10 @@ const pesanKopi = new Promise((resolve, reject) => {
 const mintaMenu = () => {
     console.log('Berhasil mendapat menu')
 }
-const kasir = () => {
+const kasir = async () => {
     console.log('Meminta menu')
     mintaMenu()
-    const kopi = pesanKopi
+    const kopi = await pesanKopi
     console.log(kopi)
 }
   

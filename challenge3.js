@@ -6,8 +6,16 @@ const listBuku = [
 
 const sumJumlahBuku = (buku) => {
     //tambahkan kode disini
-    let totalBuku = 0
-    
+    let totalBuku = buku.reduce((accumulator, curr) => {
+        console.log("🚀 ~ file: challenge3.js:11 ~ totalBuku.reduce ~ curr:", curr)
+        return accumulator += curr['jumlah']
+    }, 0)
+
+    let accumulator = 0
+    buku.map((item) => {
+        accumulator += item['jumlah']
+    })
+
     return totalBuku
 }
 
